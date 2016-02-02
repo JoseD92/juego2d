@@ -27,6 +27,7 @@
     <sprite>sprites\sp_homura_gun</sprite>
     <sprite>sprites\sp_homura_rpg</sprite>
     <sprite>sprites\sp_homura_idle</sprite>
+    <sprite>sprites\voice</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -36,6 +37,7 @@
     <object>objects\piso</object>
     <object>objects\homura</object>
     <object>objects\turner</object>
+    <object>objects\obj_voice</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -30,8 +30,11 @@ hsp = 0;
 vsp = 0;
 jumpspeed = 30;
 movespeed = 15;
+dir = 1;
 terminalvelocity = 30;
 image_speed = 0.3;
+var inst;
+cuenta= 0;
 </string>
           </argument>
         </arguments>
@@ -60,6 +63,7 @@ key_jump = keyboard_check_pressed(vk_space);
 on_floor = (place_meeting(x,y+1,obj_wall) || place_meeting(x,y+1,piso));
 
 move = key_left + key_right;
+if (move!=0) dir=move;
 if (move == 1) image_xscale = 1;
 if (move == -1) image_xscale = -1;
 
@@ -80,9 +84,30 @@ if (vsp == 0 &amp;&amp; hsp == 0 &amp;&amp; on_floor){
 hsp = move * movespeed;
 if (vsp &lt; terminalvelocity) vsp += grav;
 
+if(cuenta==15){
+    inst = instance_create(x+(50*dir), y, obj_voice);
+    with (inst)
+   {
+    dir = other.dir;
+   }
+   cuenta=0;
+}
+
 if (keyboard_check(ord('E'))) {
     image_speed = 0.3;
     sprite_index = sp_miku_shoot;
+    cuenta+=1;
+}
+
+if (keyboard_check_pressed(ord('E'))) {
+    jumpspeed = 10;
+    movespeed = 6;
+}
+
+if (keyboard_check_released(ord('E'))) {
+jumpspeed = 30;
+movespeed = 15;
+cuenta=0;
 }
 
 if (keyboard_check(ord('Q'))) {
