@@ -21,6 +21,12 @@
     <sprite>sprites\sp_plat_center</sprite>
     <sprite>sprites\sp_plat_rigth</sprite>
     <sprite>sprites\sp_miku_run</sprite>
+    <sprite>sprites\sp_homura_run</sprite>
+    <sprite>sprites\sp_homura_dmg</sprite>
+    <sprite>sprites\sp_homura_die</sprite>
+    <sprite>sprites\sp_homura_gun</sprite>
+    <sprite>sprites\sp_homura_rpg</sprite>
+    <sprite>sprites\sp_homura_idle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -28,6 +34,8 @@
     <object>objects\miku</object>
     <object>objects\obj_wall</object>
     <object>objects\piso</object>
+    <object>objects\homura</object>
+    <object>objects\turner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
