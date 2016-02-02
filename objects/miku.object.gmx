@@ -85,6 +85,10 @@ if (keyboard_check(ord('E'))) {
     sprite_index = sp_miku_shoot;
 }
 
+if (keyboard_check(ord('Q'))) {
+    game_restart();
+}
+
 if (keyboard_check(ord('B'))) {
     image_speed = 0.3;
     sprite_index = sp_miku_win;
