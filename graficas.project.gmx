@@ -5,9 +5,33 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sp_miku_idle</sprite>
+    <sprite>sprites\sp_miku_dead</sprite>
+    <sprite>sprites\sp_miku_fall</sprite>
+    <sprite>sprites\sprite11_floor_left</sprite>
+    <sprite>sprites\sprite12_floor_mid</sprite>
+    <sprite>sprites\sprite13_floor_right</sprite>
+    <sprite>sprites\sp_miku_jump</sprite>
+    <sprite>sprites\sp_miku_land</sprite>
+    <sprite>sprites\sp_miku_shoot</sprite>
+    <sprite>sprites\sp_miku_win</sprite>
+    <sprite>sprites\sprite7</sprite>
+    <sprite>sprites\sp_plat_left</sprite>
+    <sprite>sprites\sp_plat_center</sprite>
+    <sprite>sprites\sp_plat_rigth</sprite>
+    <sprite>sprites\sp_miku_run</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\miku</object>
+    <object>objects\obj_wall</object>
+    <object>objects\piso</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
