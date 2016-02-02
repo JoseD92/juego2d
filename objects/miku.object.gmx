@@ -126,6 +126,13 @@ if (key_jump &amp;&amp; on_floor)
     sprite_index = sp_miku_jump;
 }
 
+if (place_meeting(x+hsp,y,homura)) {
+    if(global.vida == 0) game_restart();
+    x=256;
+    y=256;
+    global.vida-=1;
+}
+
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_wall) || place_meeting(x+hsp,y,piso))
 {

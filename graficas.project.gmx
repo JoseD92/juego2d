@@ -38,6 +38,7 @@
     <object>objects\homura</object>
     <object>objects\turner</object>
     <object>objects\obj_voice</object>
+    <object>objects\controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
