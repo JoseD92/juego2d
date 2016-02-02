@@ -65,7 +65,11 @@ if (move == -1) image_xscale = -0.65;
 hsp = move * movespeed;
 if (vsp &lt; terminalvelocity) vsp += grav;
 
-if (place_meeting(x+hsp,y,turner)) {
+if (place_meeting(x+hsp,y,miku)) {
+    game_restart();
+}
+
+if (place_meeting(x+hsp,y,turner) || place_meeting(x+hsp,y,homura)) {
     dir = - dir;
 } else {
 
